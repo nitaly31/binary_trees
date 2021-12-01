@@ -67,9 +67,12 @@ avl_t *array_to_avl(int *array, size_t size);
 avl_t *avl_remove(avl_t *root, int value);
 avl_t *sorted_array_to_avl(int *array, size_t size);
 int binary_tree_is_heap(const binary_tree_t *tree);
-heap_t *heap_insert(heap_t **root, int value)
+heap_t *heap_insert(heap_t **root, int value);
 heap_t *array_to_heap(int *array, size_t size);
 int heap_extract(heap_t **root);
 int *heap_to_sorted_array(heap_t *heap, size_t *size);
+
+/* Print function */
+void binary_tree_print(const binary_tree_t *);
 
 #endif /* _BINARY_TREES_H_ */
