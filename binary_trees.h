@@ -49,6 +49,8 @@ int binary_tree_is_full(const binary_tree_t *tree);
 int binary_tree_is_perfect(const binary_tree_t *tree);
 binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
+/* Created */
+size_t balance_height(const binary_tree_t *tree);
 
 /* Advanced */
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
