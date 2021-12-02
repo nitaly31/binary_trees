@@ -19,6 +19,8 @@ int binary_tree_left_depth(const binary_tree_t *tree)
  * is_perfect - function that checks if a binary tree is full
  *
  * @tree: Pointer to the tree
+ * @depth: depth
+ * @level: level
  * Return: Return the height of the tree
  */
 size_t is_perfect(const binary_tree_t *tree, int depth, int level)
@@ -32,7 +34,8 @@ size_t is_perfect(const binary_tree_t *tree, int depth, int level)
 	}
 	if (!tree->right || !tree->left)
 		return (0);
-	return (is_perfect(tree->left, depth, level + 1) && is_perfect(tree->right, depth, level + 1));
+	return (is_perfect(tree->left, depth, level + 1) &&
+			is_perfect(tree->right, depth, level + 1));
 }
 /**
  * binary_tree_is_perfect - function that checks if a binary tree is full
@@ -43,5 +46,6 @@ size_t is_perfect(const binary_tree_t *tree, int depth, int level)
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 	int depth_left = binary_tree_left_depth(tree);
+
 	return (is_perfect(tree, depth_left, 0));
 }
