@@ -1,6 +1,6 @@
 #include "binary_trees.h"
 /**
- * array_to_bst - function that finds the sibling of a node
+ * bst_search - function that finds the sibling of a node
  *
  * @tree: tree
  * @value: max
