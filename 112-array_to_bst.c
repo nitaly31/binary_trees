@@ -2,8 +2,8 @@
 /**
  * array_to_bst - function that finds the sibling of a node
  *
- * @tree: tree
- * @value: max
+ * @array: tree
+ * @size: max
  * Return: Return the height of the tree
  */
 bst_t *array_to_bst(int *array, size_t size)
