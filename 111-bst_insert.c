@@ -2,6 +2,7 @@
 /**
  * bst_insert - function that finds the sibling of a node
  *
+ * @tree: tree
  * @value: max
  * Return: Return the height of the tree
  */
