@@ -12,10 +12,10 @@ binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 
 	if (!uncle || !(uncle->parent) || !(uncle->parent->parent))
 		return (NULL);
-	if (uncle->parent->parent->left && uncle->parent->parent->left !=
+	if ((uncle->parent->parent->left) && (uncle->parent->parent->left) !=
 		   node->parent)
 		return (uncle->parent->parent->left);
-	else if (uncle->parent->parent->right && uncle->parent->parent->right !=
+	else if ((uncle->parent->parent->right) && (uncle->parent->parent->right) !=
 		   node->parent)
 		return (uncle->parent->parent->right);
 	return (uncle);
