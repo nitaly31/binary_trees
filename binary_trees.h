@@ -80,4 +80,8 @@ int *heap_to_sorted_array(heap_t *heap, size_t *size);
 /* Print function */
 void binary_tree_print(const binary_tree_t *);
 
+heap_t *insert_node(heap_t *root, int size, int index, int pind, int value);
+heap_t *bubble_up(heap_t *node);
+int count_nodes(binary_tree_t *root);
+heap_t *create_node(heap_t *parent, int value);
 #endif /* _BINARY_TREES_H_ */
